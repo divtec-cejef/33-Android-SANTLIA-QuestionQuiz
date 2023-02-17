@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QuestionQuiz</string>
+    <string name="jeu_text_commencement_partie">C\'est parti !</string>
+    <string name="titre_textfields_joueur1_main">Joueur 1</string>
+    <string name="titre_textfields_joueur2_main">Joueur 2</string>
+    <string name="texte_bouton_start_main">Start</string>
+    <string name="texte_bouton_quitter_param">Quitter</string>
+    <string name="texte_titre_textview_param">Paramètres</string>
+    <string name="texte_descriptions_slider_param">Vitesse de défilement des questions (seconde)</string>
+    <string name="texte_descriptions_texte_fields_param">Intitulé de la question</string>
+    <string name="texte_textefields_param">Intitulé</string>
+    <string name="texte_descriptions_radiogroup_param">Cocher la réponse</string>
+    <string name="texte_coche_vrai_param">Vrai</string>
+    <string name="texte_coche_faux_param">Faux</string>
+    <string name="texte_bouton_ajouter_param">Ajouter</string>
+    <string name="texte_score_depart_jeu">0</string>
+    <string name="texte_debut_question_jeu">GO</string>
+    <string name="texte_bouton_menu_jeu">Menu</string>
+    <string name="texte_bouton_rejouer_jeu">Rejouer</string>
+
+</resources>

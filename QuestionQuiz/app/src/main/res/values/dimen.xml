@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="taille_titre_app_main">48dp</dimen>
+    <dimen name="margin_titre_app_main">20dp</dimen>
+    <dimen name="margin_layout_textfields_main">40dp</dimen>
+    <dimen name="taille_texte_textfields_main">20sp</dimen>
+    <dimen name="marge_bas_textfields_joueur1_main">20dp</dimen>
+    <dimen name="margin_bouton_start_main">20dp</dimen>
+    <dimen name="taille_texte_bouton_quitter_param">12dp</dimen>
+    <dimen name="margin_gauche_bouton_quitter_param">10dp</dimen>
+    <dimen name="taille_titre_param">56dp</dimen>
+    <dimen name="layout_margin_titre_param">15dp</dimen>
+    <dimen name="taille_texte_textfield_param">20sp</dimen>
+    <dimen name="taille_texte_score_joueur_jeu">136dp</dimen>
+    <dimen name="taille_texte_debut_question_jeu">20dp</dimen>
+    <dimen name="taille_texte_nom_joueur_jeu">36dp</dimen>
+
+
+</resources>

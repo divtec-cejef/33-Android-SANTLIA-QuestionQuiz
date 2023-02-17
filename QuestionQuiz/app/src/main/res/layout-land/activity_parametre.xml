@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParametreActivity"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/taille_titre_param"
+            android:layout_margin="@dimen/layout_margin_titre_param"
+            android:text="@string/texte_titre_textview_param"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/param_btn_quitter"
+            android:text="Quitter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_descriptions_slider_param"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/param_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueTo="10"
+                android:stepSize="1"
+                android:valueFrom="1"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_descriptions_texte_fields_param"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/Widget.Style.TextFields"
+                android:layout_height="wrap_content"
+                android:hint="@string/texte_textefields_param">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/param_saisie_intitule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/taille_texte_textfield_param" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_descriptions_radiogroup_param"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/param_reponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/param_reponse_vrai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/texte_coche_vrai_param"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/param_reponse_faux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texte_coche_faux_param"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/param_btn_ajouter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texte_bouton_ajouter_param"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

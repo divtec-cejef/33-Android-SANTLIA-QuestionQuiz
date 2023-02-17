@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/scoreJoueur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texte_score_depart_jeu"
+        android:textSize="@dimen/taille_texte_score_joueur_jeu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jeu_nomjoueur1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jeu_btn_joueur1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/jeu_nomjoueur2"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/jeu_text_joueur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:rotation="180"
+        android:text="@string/texte_debut_question_jeu"
+        android:textSize="@dimen/taille_texte_debut_question_jeu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jeu_btn_joueur2" />
+
+    <TextView
+        android:id="@+id/jeu_text_joueur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="@string/texte_debut_question_jeu"
+        android:textSize="@dimen/taille_texte_debut_question_jeu"
+        app:layout_constraintBottom_toTopOf="@+id/jeu_btn_joueur1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/jeu_nomjoueur2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:rotation="180"
+        android:textSize="@dimen/taille_texte_nom_joueur_jeu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/jeu_btn_joueur2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/jeu_nomjoueur1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/scoreJoueur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texte_score_depart_jeu"
+        android:textSize="@dimen/taille_texte_score_joueur_jeu"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/jeu_btn_finDeGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/jeu_btn_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/texte_bouton_menu_jeu" />
+
+        <Button
+            android:id="@+id/jeu_btn_rejouer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texte_bouton_rejouer_jeu" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
